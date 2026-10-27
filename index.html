@@ -52,7 +52,6 @@
       <button id="btn2P" class="alt">2 Jugadores</button>
     </div>
     <p style="font-size:.78rem;margin-top:10px">Tú: <kbd>A</kbd><kbd>D</kbd> mover · <kbd>W</kbd> saltar · <kbd>Espacio</kbd> chutar · <kbd>Q</kbd> PODER. &nbsp; P2: <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd> · <kbd>Enter</kbd> chut · <kbd>Shift</kbd> poder.</p>
-    <p style="font-size:.72rem;color:#64748b">Nombres y equipos son parecidos legales, no marcas reales.</p>
   </div>
 </div>
 
@@ -91,21 +90,21 @@ window.addEventListener("resize",resize); resize();
 
 // ---------- Estrellas (parecidos legales) + poderes ----------
 const STARS={
-  pulga:   { name:"La Pulga",  skin:"#f2c79b", hair:"#2b1d12", speed:1.05, jump:1.0, kick:1.05, power:"freeze",  pdesc:"Congela al rival 1.5s" },
-  bicho:   { name:"El Bicho",  skin:"#e8b98f", hair:"#1a1a1a", speed:1.0,  jump:1.2, kick:1.25, power:"rocket",  pdesc:"Mega chut teledirigido" },
-  ney:     { name:"O Ney",     skin:"#8d5a3c", hair:"#0e0e0e", speed:1.2,  jump:1.0, kick:1.0,  power:"dash",    pdesc:"Embestida veloz" },
-  lewa:    { name:"El Nueve",  skin:"#f0c49a", hair:"#3a2a18", speed:0.95, jump:1.1, kick:1.3,  power:"big",     pdesc:"Cabeza gigante 3s" },
-  mbap:    { name:"La Tortue", skin:"#6b4226", hair:"#141414", speed:1.3,  jump:1.0, kick:1.0,  power:"dash",    pdesc:"Sprint turbo" },
-  haala:   { name:"El Robot",  skin:"#f3c79e", hair:"#caa15a", speed:0.9,  jump:1.25,kick:1.35, power:"quake",   pdesc:"Terremoto al caer" },
+  pulga:   { name:"Messi",     skin:"#f2c79b", hair:"#2b1d12", speed:1.05, jump:1.0, kick:1.05, power:"freeze",  pdesc:"Congela al rival 1.5s" },
+  bicho:   { name:"Ronaldo",   skin:"#e8b98f", hair:"#1a1a1a", speed:1.0,  jump:1.2, kick:1.25, power:"rocket",  pdesc:"Mega chut teledirigido" },
+  ney:     { name:"Neymar",    skin:"#8d5a3c", hair:"#0e0e0e", speed:1.2,  jump:1.0, kick:1.0,  power:"dash",    pdesc:"Embestida veloz" },
+  lewa:    { name:"Lewandowski",skin:"#f0c49a",hair:"#3a2a18", speed:0.95, jump:1.1, kick:1.3,  power:"big",     pdesc:"Cabeza gigante 3s" },
+  mbap:    { name:"Mbappé",    skin:"#6b4226", hair:"#141414", speed:1.3,  jump:1.0, kick:1.0,  power:"dash",    pdesc:"Sprint turbo" },
+  haala:   { name:"Haaland",   skin:"#f3c79e", hair:"#caa15a", speed:0.9,  jump:1.25,kick:1.35, power:"quake",   pdesc:"Terremoto al caer" },
 };
-// ---------- Equipos (ciudades reales, nombres inventados) ----------
+// ---------- Equipos ----------
 const TEAMS=[
-  {name:"Barcelona Azulgrana", c1:"#7a0f2b", c2:"#1d2d6b"},
-  {name:"Madrid Blancos",      c1:"#f8fafc", c2:"#d4af37"},
-  {name:"Manchester Celeste",  c1:"#6cabdd", c2:"#1c2c5b"},
-  {name:"Múnich Rojo",         c1:"#dc052d", c2:"#0a1a4f"},
-  {name:"París Marino",        c1:"#004170", c2:"#da291c"},
-  {name:"Liverpool Escarlata", c1:"#c8102e", c2:"#00b2a9"},
+  {name:"FC Barcelona",      c1:"#7a0f2b", c2:"#1d2d6b"},
+  {name:"Real Madrid",       c1:"#f8fafc", c2:"#d4af37"},
+  {name:"Manchester City",   c1:"#6cabdd", c2:"#1c2c5b"},
+  {name:"Bayern Múnich",     c1:"#dc052d", c2:"#0a1a4f"},
+  {name:"París SG",          c1:"#004170", c2:"#da291c"},
+  {name:"Liverpool FC",      c1:"#c8102e", c2:"#00b2a9"},
 ];
 let myStar="pulga", myTeam=0;
 
